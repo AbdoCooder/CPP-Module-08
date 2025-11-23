@@ -18,8 +18,9 @@ int main() {
       std::cout << *it << std::endl;
       it++;
     }
+    easyfind(vec, 100);
   } catch (std::exception &e) {
-    std::cout << e.what() << std::endl;
+    std::cerr << e.what() << std::endl;
   }
   return 0;
 }
