@@ -26,7 +26,7 @@ class Span {
 
     // add a range of numbers from other container at once
     template<typename T>                      // Used template to accept all type of containers
-    void addRange(T begin, T end) {
+    void addNumber(T begin, T end) {
       int dist = std::distance(begin, end);   // count how many numbers to add
       if ((data.size() + dist) > size) {      // make sure the Span's size capable of holder the range
         throw Span::SizeNotEnoughException(); // Throw a custom exception if the size is not enough

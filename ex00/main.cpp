@@ -19,6 +19,7 @@ int main() {
       it++;
     }
     easyfind(vec, 100);
+    std::cout << "No Exception!" << std::endl;
   } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
   }

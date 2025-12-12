@@ -27,14 +27,14 @@ int main() {
   std::cout << "\n--- 10,000 Numbers Test ---" << std::endl;
   try {
     std::vector<int> random_numbers;
-    
+
     std::srand(std::time(NULL));
     for (int i = 0; i < 10000; ++i) {
       random_numbers.push_back(std::rand());
     }
 
     Span bigSpan(10000);
-    bigSpan.addRange(random_numbers.begin(), random_numbers.end());
+    bigSpan.addNumber(random_numbers.begin(), random_numbers.end());
 
     std::cout << "Shortest: " << bigSpan.shortestSpan() << std::endl;
     std::cout << "Longest: " << bigSpan.longestSpan() << std::endl;
